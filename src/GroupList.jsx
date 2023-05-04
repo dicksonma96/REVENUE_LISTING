@@ -11,7 +11,7 @@ function GroupList() {
       <h1>Browse Revenue Groups</h1>
       <br />
     {
-      (!loading  && data?.length == 0) && 
+      (!loading  && data?.length == 0 || !data) && 
       <div className="empty_group rowc w100">
         <em>Not data found</em>
       </div>
